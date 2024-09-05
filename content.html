@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .header {
+            padding: 18px;
+            background: black;
+        }
+
+        .container {
+
+            width: 1000px;
+            margin: auto;
+
+        }
+
+        .logo h2 {
+
+            color: white;
+            font-size: 42px;
+            font-family: MS Gothic;
+
+        }
+
+        .nav {
+            /* width: 630px; */
+            height: 50px;
+            float: right;
+            margin-top: -50px;
+        }
+
+        .nav ul li {
+            display: inline;
+        }
+
+        .nav ul li a {
+
+            color: white;
+            text-decoration: none;
+            padding: 42px;
+            position: relative;
+            top: 16px;
+            font-size: 20px;
+        }
+
+        .content {
+            width: 100%;
+            height: 80vh;
+            background: gray;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .content img {
+            width: 100%;
+            height: 80vh;
+            cursor: pointer;
+        }
+
+        .content:hover img {
+            transition: 2s;
+            -webkit-transform: scale(2.1, 2.1);
+            transform: scale(2.1, 2.1);
+
+
+        }
+
+        .color {
+            width: 100%;
+            height: 80vh;
+            background-color: black;
+            position: absolute;
+            top: 0px;
+            opacity: 0;
+
+
+        }
+
+        .content:hover .color {
+            opacity: 0.6;
+            transition: 2s;
+        }
+
+
+        .text {
+
+            width: 360px;
+            height: 50px;
+            margin-top: 202px;
+            opacity: 0;
+        }
+
+        .text h2 {
+
+            color: white;
+            font-size: 42px;
+            margin-top: -45px;
+        }
+
+        @keyframes constant-rotation {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .content:hover .text {
+            margin-left: 390px;
+            transition: 2s;
+            opacity: 1;
+            animation: constant-rotation 2s linear infinite;
+        }
+
+
+        .text1 h2 {
+
+            color: white;
+            font-size: 42px;
+            margin-top: 100px;
+        }
+
+        .content:hover .text1 {
+
+            margin-left: 432px;
+            transition: 2s;
+            opacity: 1;
+        }
+
+        .text2 h2 {
+
+            color: white;
+            font-size: 42px;
+            float: right;
+        }
+
+        .content:hover .text2 {
+
+            margin-right: 390px;
+            transition: 2s;
+            opacity: 1;
+        }
+
+        .main {
+            width: 100%;
+            height: 90vh;
+            background-color: rgb(181, 99, 99);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            opacity: 0.6;
+
+        }
+
+        .box1 {
+            width: 29%;
+            height: 60vh;
+            background-color: blue;
+            margin: auto;
+        }
+
+        .box2 {
+            width: 29%;
+            height: 60vh;
+            background-color: blue;
+            margin: auto;
+
+        }
+
+        .box3 {
+            width: 29%;
+            height: 60vh;
+            background-color: blue;
+            margin: auto;
+            border-radius: 10px;
+        }
+
+        .main:hover .box1 {
+            border-radius: 50%;
+            transition: 2s;
+        }
+
+        .main:hover .box2 {
+            border-radius: 50%;
+            transition: 2s;
+        }
+
+
+        .main:hover .box3 {
+            border-radius: 50%;
+            transition: 2s;
+        }
+
+        .box1:hover {
+            background-color: green;
+            transition: 1s;
+        }
+
+        .box2:hover {
+            background-color: rgb(128, 119, 0);
+            transition: 1s;
+        }
+
+        .box3:hover {
+            background-color: rgb(128, 0, 77);
+            transition: 1s;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="container">
+            <div class="logo">
+                <h2>logo</h2>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Contact Us</a></li>
+                    <li><a href="">Gallery</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- end navbar -->
+
+    <div class="content">
+        <img src="slide1.jpg" alt="">
+        <div class="color">
+
+            <div class="text2">
+                <h2> iam wajid here </h2>
+            </div>
+
+            <div class="text">
+                <h2>Hello this is wajid</h2>
+            </div>
+            <div class="text1">
+                <h2> iam wajid here </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="main">
+
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+
+    </div>
+</body>
+
+</html>
